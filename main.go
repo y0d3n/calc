@@ -20,7 +20,7 @@ func slot(s string) {
 	var str = "\t"
 	rand.Seed(time.Now().UnixNano())
 	for i := 0; i < len(s); i++ {
-		for j := 0; j < rand.Intn(150); j++ {
+		for j := 0; j < rand.Intn(1); j++ {
 			fmt.Printf("\r%s%s", str, string(abc[rand.Intn(len(abc)-1)]))
 			time.Sleep(time.Millisecond * time.Duration(rand.Intn(100)))
 		}
@@ -32,7 +32,6 @@ func slot(s string) {
 func main() {
 	fmt.Printf("\x1b[32m\n\n")
 
-	fmt.Printf("\t")
 	slot("Initializing...")
 	fmt.Printf("\n\n")
 	slot("837E834E81755982B382F182CC82B182C682CD")
@@ -67,5 +66,4 @@ func main() {
 	slot("81CD8145814D29")
 	slot("816381638176...")
 	fmt.Printf("\x1b[0m")
-	slot("hogefugapiyo")
 }
