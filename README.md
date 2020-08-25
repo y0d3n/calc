@@ -1,8 +1,8 @@
 # calc
 
-![calc](./calc.png)
+![calc](./calc.gif)
 
-calcの画面っぽく表示するアレ
+calcの画面っぽく表示するアレ(gifは10倍速)
 
 ```bash
 $ git clone git@github.com:y0d3n/calc.git

@@ -20,7 +20,7 @@ func slot(s string) {
 	var str = "\t"
 	rand.Seed(time.Now().UnixNano())
 	for i := 0; i < len(s); i++ {
-		for j := 0; j < rand.Intn(1); j++ {
+		for j := 0; j < rand.Intn(150); j++ {
 			fmt.Printf("\r%s%s", str, string(abc[rand.Intn(len(abc)-1)]))
 			time.Sleep(time.Millisecond * time.Duration(rand.Intn(100)))
 		}
